@@ -1,6 +1,9 @@
 
 package ejercicio.pkg9.psp;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
  *
  * @author julian
@@ -13,10 +16,23 @@ public class Multiplos_tres extends Thread{
    */
     
     public int numerovariable;
-    public int suma;
+    public int suma_multiplos_tres;
+
+    public Multiplos_tres() {
+        this.suma_multiplos_tres = suma_multiplos_tres;
+    }
 
     public Multiplos_tres(int numerovariable) {
         this.numerovariable = numerovariable;
+    }
+
+
+    
+    
+    
+
+    public int getSuma_multiplos_tres() {
+        return suma_multiplos_tres;
     }
 
     
@@ -26,19 +42,23 @@ public class Multiplos_tres extends Thread{
     
      @Override
    public void run(){
-       
-       while(suma<1000){
+        try {
+            sleep(5000);
+        } catch (InterruptedException ex) {
+            Logger.getLogger(Multiplos_tres.class.getName()).log(Level.SEVERE, null, ex);
+        }
+       while(suma_multiplos_tres<1000){
            
            if(3%numerovariable==0){
-               suma=numerovariable+suma;
+               suma_multiplos_tres=numerovariable+suma_multiplos_tres;
            
            }
           
-           System.out.println("La suma de los multiplos de 3 es: "+suma);
+           
       
        
        }
-       
+       System.out.println("sumado los multiplos de tres");
        
        
         

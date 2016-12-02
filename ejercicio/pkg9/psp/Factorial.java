@@ -13,12 +13,12 @@ public class Factorial extends Thread{
     double factorial=1;
     
     
-    Scanner s=new Scanner(System.in);
-    int numero=s.nextInt();
+   
     
     @Override
     public void run(){
-        System.out.println("Inroduce el numero: ");
+        
+    System.out.println("Inroduce el numero: ");
     Scanner s=new Scanner(System.in);
     int numero=s.nextInt();    
         

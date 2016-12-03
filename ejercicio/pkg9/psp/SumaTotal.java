@@ -10,22 +10,46 @@ import java.util.logging.Logger;
  */
 public class SumaTotal extends Thread{
 
-    Multiplos_tres tres=new Multiplos_tres();
-    Multiplos_cinco cinco=new Multiplos_cinco();
+  
+    
+    public int sumatotal;
+    
+    Multiplos_tres sumaMultiplos_tres;
+    Multiplos_cinco sumaMultiplos_cinco;
+    
+    
+    int sumtres=sumaMultiplos_tres.getSuma_multiplos_tres();
+    int sumcinco=sumaMultiplos_cinco.getSuma_multiplos_cinco();
+
+    public SumaTotal() {
+        this.sumatotal = sumatotal;
+    }
+
+   public void totalidad(){
+       sumatotal=(sumtres)+(sumcinco);
+        
+        System.out.println("La suma total es de "+sumatotal);
+   }
+   
+    
+    
     
     @Override
     public void run() {
+        /**
+         * Esta clase tiene el sleep mas largo dado que es el ultimo que tiene que entrar para
+         * que primero se ejecuten las de sumas de multiplos necesarias para poder calcular este total.
+         */
         try {
-            sleep(10000);
+            sleep(9000);
         } catch (InterruptedException ex) {
             Logger.getLogger(SumaTotal.class.getName()).log(Level.SEVERE, null, ex);
+            
         }
-        System.out.println(tres.getSuma_multiplos_tres());
-        System.out.println(cinco.getSuma_multiplos_cinco());
+        totalidad();
         
-        int sumatotal=(tres.getSuma_multiplos_tres())+(cinco.getSuma_multiplos_cinco());
         
-        System.out.println("La suma total es de "+sumatotal);
+         
     }
     
     

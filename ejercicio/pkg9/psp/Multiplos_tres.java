@@ -28,6 +28,7 @@ public class Multiplos_tres extends Thread {
         return suma_multiplos_tres;
     }
 
+    
     @Override
     public void run() {
         try {
@@ -43,7 +44,7 @@ public class Multiplos_tres extends Thread {
             }
 
         }
-        System.out.println("sumado los multiplos de tres");
+        System.out.println("Sumado los multiplos de tres");
 
     }
 

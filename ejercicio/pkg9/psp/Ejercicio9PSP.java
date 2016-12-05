@@ -9,11 +9,11 @@ public class Ejercicio9PSP {
 
     
     public static void main(String[] args) throws InterruptedException {
-        Multiplos_tres multi3 = new Multiplos_tres(3);
+        Multiplos_tres multi3 = new Multiplos_tres();
         multi3.setPriority(8);
         
         
-        Multiplos_cinco multi5 = new Multiplos_cinco(5);
+        Multiplos_cinco multi5 = new Multiplos_cinco();
         multi5.setPriority(8);
         
         Factorial fac = new Factorial();
@@ -22,10 +22,10 @@ public class Ejercicio9PSP {
         
         SumaTotal stotal=new SumaTotal();
         stotal.setPriority(1);
-//        fac.start();
-//        
-//        multi3.start();
-//        multi5.start();
+        fac.start();
+        
+        multi3.start();
+        multi5.start();
         
         stotal.start();
         

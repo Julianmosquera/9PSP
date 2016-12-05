@@ -9,43 +9,49 @@ import java.util.logging.Logger;
  */
 public class Multiplos_cinco extends Thread {
 
-    public int numerovariable;
-    public int suma_multiplos_cinco;
+    
+    public static int suma_multiplos_cinco;
+    
 
     public Multiplos_cinco() {
-        this.suma_multiplos_cinco = suma_multiplos_cinco;
+        
     }
 
-    public Multiplos_cinco(int numerovariable) {
-        this.numerovariable = numerovariable;
-    }
+   
 
     @Override
     public void run() {
-        /**
-         * Le pongo el sleep para que de tiempo a darle un valor por teclado al
-         * factorial lo mismo para los otros hilos.
-         */
-        try {
-            sleep(6000);
-        } catch (InterruptedException ex) {
-            Logger.getLogger(Multiplos_cinco.class.getName()).log(Level.SEVERE, null, ex);
-        }
-
-        while (suma_multiplos_cinco < 1000) {
-
-            if (5 % numerovariable == 0) {
-                suma_multiplos_cinco = numerovariable + suma_multiplos_cinco;
+        
+            /**
+             * Le pongo el sleep para que de tiempo a darle un valor por teclado al
+             * factorial lo mismo para los otros hilos.
+             */
+//        try {
+//            sleep(6000);
+//        } catch (InterruptedException ex) {
+//            Logger.getLogger(Multiplos_cinco.class.getName()).log(Level.SEVERE, null, ex);
+//        }
+      
+       
+        for (int i = 0; i < 1000; i++) {
+            if (i%3==0) {
+                suma_multiplos_cinco = suma_multiplos_cinco+ i;
 
             }
-
-        }
-        System.out.println("Sumdo los multiplos de cinco");
-
+            
+            
+            i++;
+        }System.out.println("Sumado los multiplos de cinco");
     }
+            
+    
+        
+        
+       
+    
 
     public int getSuma_multiplos_cinco() {
         return suma_multiplos_cinco;
     }
-
 }
+

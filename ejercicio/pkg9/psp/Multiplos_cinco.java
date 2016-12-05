@@ -12,19 +12,12 @@ public class Multiplos_cinco extends Thread {
     public int numerovariable;
     public int suma_multiplos_cinco;
 
-    
-
     public Multiplos_cinco() {
-        this.suma_multiplos_cinco=suma_multiplos_cinco;
+        this.suma_multiplos_cinco = suma_multiplos_cinco;
     }
-    
-    
+
     public Multiplos_cinco(int numerovariable) {
         this.numerovariable = numerovariable;
-    }
-
-    public int getSuma_multiplos_cinco() {
-        return suma_multiplos_cinco;
     }
 
     @Override
@@ -49,6 +42,10 @@ public class Multiplos_cinco extends Thread {
         }
         System.out.println("Sumdo los multiplos de cinco");
 
+    }
+
+    public int getSuma_multiplos_cinco() {
+        return suma_multiplos_cinco;
     }
 
 }

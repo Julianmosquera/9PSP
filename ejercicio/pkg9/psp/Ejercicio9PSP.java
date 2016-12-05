@@ -22,10 +22,10 @@ public class Ejercicio9PSP {
         
         SumaTotal stotal=new SumaTotal();
         stotal.setPriority(1);
-        fac.start();
-        
-        multi3.start();
-        multi5.start();
+//        fac.start();
+//        
+//        multi3.start();
+//        multi5.start();
         
         stotal.start();
         

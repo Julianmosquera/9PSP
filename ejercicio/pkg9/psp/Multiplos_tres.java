@@ -24,10 +24,7 @@ public class Multiplos_tres extends Thread {
         this.numerovariable = numerovariable;
     }
 
-    public int getSuma_multiplos_tres() {
-        return suma_multiplos_tres;
-    }
-
+    
     
     @Override
     public void run() {
@@ -47,5 +44,11 @@ public class Multiplos_tres extends Thread {
         System.out.println("Sumado los multiplos de tres");
 
     }
+    
+    
+    public int getSuma_multiplos_tres() {
+        return suma_multiplos_tres;
+    }
+
 
 }

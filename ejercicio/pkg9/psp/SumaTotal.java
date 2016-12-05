@@ -14,25 +14,20 @@ public class SumaTotal extends Thread{
     
     public int sumatotal;
     
-    Multiplos_tres sumaMultiplos_tres;
-    Multiplos_cinco sumaMultiplos_cinco;
+
     
+    Multiplos_tres tres;
+    Multiplos_cinco cinco;
     
-    int sumtres=sumaMultiplos_tres.getSuma_multiplos_tres();
-    int sumcinco=sumaMultiplos_cinco.getSuma_multiplos_cinco();
+  
 
     public SumaTotal() {
         this.sumatotal = sumatotal;
     }
 
-   public void totalidad(){
-       sumatotal=(sumtres)+(sumcinco);
-        
-        System.out.println("La suma total es de "+sumatotal);
-   }
-   
+  
     
-    
+
     
     @Override
     public void run() {
@@ -40,13 +35,18 @@ public class SumaTotal extends Thread{
          * Esta clase tiene el sleep mas largo dado que es el ultimo que tiene que entrar para
          * que primero se ejecuten las de sumas de multiplos necesarias para poder calcular este total.
          */
+        
+         
         try {
             sleep(9000);
         } catch (InterruptedException ex) {
             Logger.getLogger(SumaTotal.class.getName()).log(Level.SEVERE, null, ex);
             
         }
-        totalidad();
+        sumatotal=tres.getSuma_multiplos_tres()+cinco.getSuma_multiplos_cinco();
+        
+        System.out.println("La suma total es de "+sumatotal);
+   
         
         
          

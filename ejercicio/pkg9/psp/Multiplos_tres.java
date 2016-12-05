@@ -29,11 +29,11 @@ public class Multiplos_tres extends Thread {
     public void run() {
         
         
-//        try {
-//           sleep(5000);
-//        } catch (InterruptedException ex) {
-//            Logger.getLogger(Multiplos_tres.class.getName()).log(Level.SEVERE, null, ex);
-//        }
+        try {
+           sleep(5000);
+        } catch (InterruptedException ex) {
+            Logger.getLogger(Multiplos_tres.class.getName()).log(Level.SEVERE, null, ex);
+        }
         for (int i = 0; i < 1000; i++) {
             
         

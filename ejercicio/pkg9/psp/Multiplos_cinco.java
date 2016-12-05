@@ -26,11 +26,11 @@ public class Multiplos_cinco extends Thread {
              * Le pongo el sleep para que de tiempo a darle un valor por teclado al
              * factorial lo mismo para los otros hilos.
              */
-//        try {
-//            sleep(6000);
-//        } catch (InterruptedException ex) {
-//            Logger.getLogger(Multiplos_cinco.class.getName()).log(Level.SEVERE, null, ex);
-//        }
+        try {
+            sleep(6000);
+        } catch (InterruptedException ex) {
+            Logger.getLogger(Multiplos_cinco.class.getName()).log(Level.SEVERE, null, ex);
+        }
       
        
         for (int i = 0; i < 1000; i++) {

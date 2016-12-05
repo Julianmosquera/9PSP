@@ -38,12 +38,12 @@ public class SumaTotal extends Thread{
        
         
          
-//        try {
-//            sleep(9000);
-//        } catch (InterruptedException ex) {
-//            Logger.getLogger(SumaTotal.class.getName()).log(Level.SEVERE, null, ex);
-//            
-//        }
+        try {
+            sleep(9000);
+        } catch (InterruptedException ex) {
+            Logger.getLogger(SumaTotal.class.getName()).log(Level.SEVERE, null, ex);
+            
+        }
         sumatotal=Multiplos_tres.suma_multiplos_tres+Multiplos_cinco.suma_multiplos_cinco;
         
         System.out.println("La suma total es de "+sumatotal);

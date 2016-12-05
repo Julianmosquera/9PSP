@@ -27,7 +27,7 @@ public class Ejercicio9PSP {
         multi3.start();
         multi5.start();
         
-        stotal.start();
+       stotal.start();
         
     }
 

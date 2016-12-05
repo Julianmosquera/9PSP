@@ -16,9 +16,7 @@ public class SumaTotal extends Thread{
     
 
     
-//    Multiplos_tres tres;
-//    Multiplos_cinco cinco;
-//    
+
   
 
     public SumaTotal() {
